@@ -1,0 +1,178 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2015 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,roman]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{banking}                             % style options are 'casual' (default), 'classic', 'banking', 'oldstyle' and 'fancy'
+\moderncvcolor{blue}                               % color options 'black', 'blue' (default), 'burgundy', 'green', 'grey', 'orange', 'purple' and 'red'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or anyhttps://www.overleaf.com/project/5f844cadbdcfca000112d818 tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+%\usepackage{hyperref}
+%\hypersetup{hidelinks}
+\usepackage[scale=0.8]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{Lawrence}{Wu}% optional, remove / comment the line if not wanted
+\address{St John's College, St John's Street, Cambridge CB2 1TP}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
+\phone[fixed]{(+44)07955105921}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
+\email{shw43@cam.ac.uk}                               % optional, remove / comment the line if not wanted                            
+
+% bibliography adjustements (only useful if you make citations in your resume, or print a list of publications using BibTeX)
+%   to show numerical labels in the bibliography (default is to show no labels)
+\makeatletter\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}\makeatother
+%   to redefine the bibliography heading string ("Publications")
+%\renewcommand{\refname}{Articles}
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+%=========================================================================
+%=========================================================================
+\section{Education}
+\textbf{University of Cambridge} \textit{Natural Sciences, BA (Hons)} \hfill \textit{Oct.2019--Jun.2022}
+\vspace*{1mm}
+
+\begin{itemize}
+    \item 1st year: First-Class (Physics, Chemistry, Materials, and Maths).
+    \item 2nd year: Upper Second-class (Physics and Maths).
+    \item 3rd year: First-Class (Physics).
+\end{itemize}
+\vspace*{3mm}
+Literature review: Superconducting Quantum Computing Hardware\\
+Computational Project: Simulating the Ising model of Ferromagnetism.\\
+\\
+Related coursework: Advanced Quantum Mechanics, General Relativity, Optics and Electrodynamics, Thermaldynamics and Statistical Physics,
+Particle and Nuclear Physics, Quantum Condensed Matter. PDE, ODE, Linear Algebra, Complex Analysis, Group Theory, Tensor Calculus.\\
+
+
+\textbf{West London Free School (UK)} \textit{Sixth Form} \hfill \textit{Oct.2017--Jun.2019}
+\vspace*{1mm}
+\begin{itemize}
+\item{A-Levels: Physics A*, Maths A*, Further Maths A*, Chemistry A* (all highest grades).}
+\end{itemize}
+\vspace*{3mm}
+
+\textbf{Taipei Municipal Jianguo High School (Taiwan)} \hfill \textit{Sept.2016--Oct.2017}
+\vspace*{1mm}
+\begin{itemize}
+\item{Ranked 1st in entrance exam for the governmental Gifted Class of Mathematics and Science.}
+\end{itemize}
+
+%=========================================================================
+%=========================================================================
+\section{Awards}
+\begin{itemize}
+	\item United Steel Companies Scholarship, St John's College, University of Cambridge (2020)
+	\item Top Gold, British Physics Olympiad (2019)
+	\item Distinction, British Mathematics Olympiad (2018 \& 2019)
+\item{Golds, UK Senior Math Challenge (2017 \& 2018)}
+\end{itemize}
+
+
+%=========================================================================
+%=========================================================================
+\section{Publication}
+\textbf{Investigation of Cosmic Preferred Directions in the Cosmic Microwave Background Using New Strategies}, Lawrence Wu \& Jiun-Huei Proty Wu (in preparation).
+
+%=========================================================================
+%=========================================================================
+\section{Research Experience}
+
+\textbf{Preferred Directions in the Cosmic Microwave Background (CMB)} \hfill \textit{Aug.2021--present}
+\vspace*{1mm}\\
+{Supervisor: Prof.\ Jiun-Huei Proty Wu, Department of Physics, National Taiwan University.}
+\vspace*{1mm}
+\begin{itemize}
+	\item Applied new strategies to investigate possible preferred axes or directions in the observed full-sky CMB maps.
+	\item Performed spherical harmonic transforms for full-sky maps of million pixels.
+	\item Independently developed all the codes.
+	\item Independently optimised the core codes employing GPU.\\
+\end{itemize}
+
+\textbf{Literature Review} \hfill \textit{Oct.2021--Apr.2022}
+\vspace*{1mm}\\
+{Supervisor: Prof Mike Payne, Department of Physics, University of Cambridge.}
+\vspace*{1mm}
+\begin{itemize}
+    \item Looked into emerging technologies of Quantum Computer Hardware and their current difficulties.\\
+\end{itemize}
+
+\textbf{Simulation of the Ising Model} \hfill \textit{Oct.2021--Apr.2022} 
+\vspace*{1mm}\\ 
+{
+Computational Project.
+\vspace*{1mm}
+\begin{itemize}
+	\item Investigated the Ising Model using the Metropolis Algorithm.
+    \item Quantified how the total magnetisation fluctuates in time when the system is in equilibrium.
+    \item Determined how Magnetisation varies with Temperature.
+    \item Found the heat capacity of the system as a function of temperature.\\
+\end{itemize}
+}
+
+\textbf{Simulation of the domestic and international spreading of COVID-19} \hfill \textit{Mar.--Jun.2020} 
+\vspace*{1mm}\\
+{
+Independent research.
+\vspace*{1mm}
+\begin{itemize}
+	\item Simulated the spreading by modeling individuals as repulsive particles.
+    \item Investigated how the spreading rate varies with the strictness of quarantining, travel restriction and  social distancing
+    \item Determined how the rate of spreading varies with the vaccination rate.\\
+\end{itemize}
+}
+
+\textbf{Connect Four AI} \hfill \textit{Jun.--Aug.2018} 
+\vspace*{1mm}\\
+{
+Independent research.
+\vspace*{1mm}
+\begin{itemize}
+	\item An unbeatable AI that plays Connect4 by Monte Carlo Tree Search (MCTS).
+	\item Investigated the difference between different Selection Algorithms in MCTS.
+    \item The AI lost 0/100000 games against a random playing agent.
+\end{itemize}
+}
+
+%=========================================================================
+%=========================================================================
+\section{Work Experience}
+
+\textbf{M2 Digital Asset Management} \textit{Summer Intern} \hfill \textit{Jun.--Jul.2021}
+\vspace*{1mm}\\
+{Project: Research and Development of Bitcoin Pricing Models.}
+\vspace*{1mm}
+\begin{itemize}
+	\item Estimated the average mining cost per coin from historical mining difficulty and ASIC chip efficiency datas.
+	\item Developed codes to estimate the probability distribution of future BTC prices by using the Black-Scholes model on current option prices.
+\end{itemize}
+
+%=========================================================================
+%=========================================================================
+\section{Computer Skills}
+{Python, C++, Linux, GPU computation, \LaTeX}
+
+\end{document}
+%% end of file `template.tex'.
