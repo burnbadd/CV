@@ -1,1 +1,5 @@
-.tmp.driveupload/
+*
+
+!*.pdf
+!*.tex
+!Readme.md
